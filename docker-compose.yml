@@ -1,0 +1,16 @@
+version: "2"
+services:
+  postgresql:
+    image: postgres:14.5
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USE: postgres
+      POSTGRES_DB: tfdw
