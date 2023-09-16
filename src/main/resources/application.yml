@@ -12,3 +12,6 @@ spring:
 server:
   error:
     include-message: always
+  servlet:
+    context-path: /api
+
