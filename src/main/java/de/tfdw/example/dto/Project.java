@@ -3,7 +3,7 @@ package de.tfdw.example.dto;
 
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Size;
 import java.util.List;
 import java.util.UUID;
 
